@@ -7,6 +7,7 @@
    </head>
     <body>
         <script>
+        let x = 0;
             function setup(){
                 createCanvas(500,500);
                 background(180, 89, 176);
@@ -14,7 +15,12 @@
 
             function draw(){
                 fill("blue");
-                square(0,0,70);
+                square(x,0,70);
+            }
+            function keyPressed(){
+                if (key === "d"){
+                    x+=1
+                }
             }
         </script>
   </body>
