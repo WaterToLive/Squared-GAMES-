@@ -9,6 +9,8 @@
         <script>
         let y = 0;
         let x = 0;
+        let x2 = 500;
+        let y2 =500;
             function setup(){
                 createCanvas(500,500);
             }
@@ -17,6 +19,7 @@
                 background(180, 89, 176);
                 fill("green");
                 square(x,y,70);
+                square(x2,y2,70);
 
             }
             function keyPressed(){
@@ -31,6 +34,18 @@
             }
                 if (key ==="s"){
                     y+=10
+                }
+                if (key==="J"){
+                    y2+=10
+                }
+                if (key==="K"){
+                    y2-=10
+                }
+                if (key==="U"){
+                    x2+=10
+                }
+                if (key==="L"){
+                    x2-=10
                 }
             }
                 
