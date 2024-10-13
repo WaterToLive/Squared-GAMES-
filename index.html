@@ -10,8 +10,10 @@
         <script>
         let y = 0;
         let x = 0;
-         x2 = 430;
-         y2 =430;
+        x2 = 250;
+        y2 =250;
+        let x3;
+        let y3;
             function setup(){
                 createCanvas(500,500);
             }
@@ -22,6 +24,8 @@
                 square(x,y,70);
                 fill("blue");
                 square(x2,y2,70);
+                ellipse(x3,y3, radius*1.5, radius*1.5);
+
 
             }
             function keyPressed(){
